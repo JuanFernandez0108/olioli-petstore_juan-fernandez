@@ -209,6 +209,21 @@ h1 {
     margin-bottom: 1.3em;
 }
 
+.accordion-button {
+    background-color: #FCCA46;
+}
+
+.accordion-header {
+    margin-bottom: 0.2em
+}
+
+.centrarCaja {
+    position: relative !important;
+    margin: auto;
+}
+
+
+
 
 /* productos - productos.html */
 
