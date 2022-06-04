@@ -1,0 +1,244 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Mochiy Pop P One', sans-serif;
+  font-family: 'Overpass', sans-serif;
+  box-sizing: border-box; }
+
+body {
+  padding-top: 100px;
+  width: 100%; }
+
+/* Header y Menu de navegacion */
+header {
+  background-color: #FCCA46;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  width: 100%;
+  z-index: 200; }
+  header ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; }
+    header ul li {
+      font-family: 'Mochiy Pop P One', sans-serif;
+      font-family: 'Overpass', sans-serif;
+      font-weight: 600;
+      margin: 0 3.1em; }
+      header ul li:hover {
+        -ms-transform: rotateZ(-7deg);
+        transform: rotateZ(-7deg);
+        transition: 0.3s ease-in; }
+
+/* Logo del header */
+.logoheader {
+  width: 4.5em;
+  display: flex;
+  margin-left: 1.3em; }
+
+a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 1em; }
+  a:hover {
+    color: #903ec7; }
+
+/* Imagen del carrito */
+.carritoimg {
+  width: 50px;
+  height: 50px;
+  margin-right: 40px; }
+
+.img-slide {
+  width: 100%;
+  margin: 0% 0% 1% 0%; }
+
+.img-index {
+  width: 30em;
+  height: 50em;
+  margin: 2em 2em; }
+
+.container-index {
+  display: flex;
+  align-items: center; }
+
+/* Titulos h1 */
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2.5em;
+  font-family: 'Mochiy Pop P One', sans-serif;
+  font-family: 'Overpass', sans-serif;
+  font-weight: 600; }
+
+.titulo-index {
+  text-transform: uppercase;
+  font-size: 2.5em;
+  font-family: 'Mochiy Pop P One', sans-serif;
+  font-family: 'Overpass', sans-serif;
+  font-weight: 600;
+  margin-top: 1em; }
+
+.titulo-marcas {
+  margin-top: 1em; }
+
+.titulo-nosotros {
+  font-size: 4em;
+  position: absolute;
+  left: 70%;
+  margin-left: -250px;
+  margin-top: 15.5em;
+  color: white;
+  text-shadow: 2px 2px 2px #000000;
+  animation: move 3s ease-in-out infinite; }
+
+@keyframes move {
+  0% {
+    transform: translate(-30%, 0); }
+  50% {
+    text-shadow: 10px 10px 10px #FCCA46; }
+  100% {
+    transform: translate(5%, 0); } }
+
+.titulo-contactanos {
+  margin-top: 0.5em; }
+
+/* Parrafos */
+.parrafos {
+  font-family: 'Mochiy Pop P One', sans-serif;
+  font-family: 'Overpass', sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 1.3em;
+  letter-spacing: 0.1em;
+  word-spacing: 0.3em;
+  line-height: 1.8em;
+  text-align: center;
+  padding: 0.5em 1em; }
+
+.parrafo-index {
+  margin: 0 7em;
+  padding: 0 0;
+  text-align: justify; }
+
+/* Contenedor de marcas - marcas.html */
+/*.container-marcas {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin: 0 2em;
+}*/
+/* Marcas - marcas.html */
+.card {
+  margin: 0.5em; }
+
+/* nosotros.html */
+.img-nosotros {
+  width: 100%;
+  display: block;
+  margin: auto;
+  margin-bottom: 1.3em; }
+
+/* FAQ en nosotros.html */
+.accordion-button {
+  background-color: #FCCA46; }
+
+.accordion-header {
+  margin-bottom: 0.2em; }
+
+.centrarCaja {
+  position: relative !important;
+  margin: auto; }
+
+/* productos - productos.html */
+#allsection {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5em;
+  max-width: 1200px;
+  min-height: 100vh; }
+
+.bolsa-dogchow {
+  width: 50%; }
+
+.btn {
+  display: flex;
+  justify-content: center;
+  width: 1.5em; }
+
+.btn-carrito {
+  display: flex;
+  justify-content: center;
+  width: 9em;
+  border: 1px solid #000000; }
+
+.container-btn_carrito {
+  position: relative;
+  left: 1.6em;
+  top: -0.7em; }
+
+.btn-juntos {
+  display: flex;
+  position: relative;
+  right: 4.2em;
+  top: 5.3em; }
+
+.producto-precio {
+  display: flex;
+  font-size: 1.5em; }
+
+.cajas {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid #000000;
+  width: 13em;
+  height: 25em;
+  margin: 1.5em 0.5em; }
+
+.parrafo-cajas {
+  font-size: 1em;
+  text-align: center; }
+
+/* Formulario de contacto - contactanos.html */
+.container-form {
+  display: flex;
+  justify-content: center; }
+
+.form-contactanos {
+  margin-bottom: 1.5em;
+  margin-top: 3em; }
+
+/* footer */
+.email-div {
+  margin: 0 1.3em; }
+
+.linkedin-div {
+  margin: 0 1.3em; }
+
+.logofooter {
+  width: 7em;
+  padding-top: 1em;
+  padding-bottom: 0.3em;
+  margin: 0 0.5em; }
+
+.container-footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%; }
+
+footer {
+  background-color: #FCCA46;
+  width: 100%; }
