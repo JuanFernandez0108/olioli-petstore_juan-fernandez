@@ -35,21 +35,21 @@ header {
 
 /* Menu de navegacion */
 
-ul {
+header ul {
     list-style: none;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
 
-li {
+header ul li {
     font-family: 'Mochiy Pop P One', sans-serif;
     font-family: 'Overpass', sans-serif;
     font-weight: 600;
     margin: 0 3.1em;
 }
 
-li:hover {
+header ul li:hover {
     -ms-transform:rotateZ(-7deg);
     transform:rotateZ(-7deg);
     transition: 0.3s ease-in;
