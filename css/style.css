@@ -12,9 +12,6 @@ body {
 /* Header y Menu de navegacion */
 header {
   background-color: #FCCA46;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   position: fixed;
   top: 0;
   left: 0;
@@ -22,39 +19,6 @@ header {
   height: 100px;
   width: 100%;
   z-index: 200; }
-  header ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap; }
-    header ul li {
-      font-family: 'Mochiy Pop P One', sans-serif;
-      font-family: 'Overpass', sans-serif;
-      font-weight: 600;
-      margin: 0 3.1em; }
-      header ul li:hover {
-        -ms-transform: rotateZ(-7deg);
-        transform: rotateZ(-7deg);
-        transition: 0.3s ease-in; }
-
-/* Logo del header */
-.logoheader {
-  width: 4.5em;
-  display: flex;
-  margin-left: 1.3em; }
-
-a {
-  color: #000000;
-  text-decoration: none;
-  font-size: 1em; }
-  a:hover {
-    color: #903ec7; }
-
-/* Imagen del carrito */
-.carritoimg {
-  width: 50px;
-  height: 50px;
-  margin-right: 40px; }
 
 .img-slide {
   width: 100%;
@@ -231,11 +195,6 @@ h1 {
 
 .bolsa-dogchow {
   width: 50%; }
-
-.btn {
-  display: flex;
-  justify-content: center;
-  width: 1.5em; }
 
 .btn-carrito {
   display: flex;
