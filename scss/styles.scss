@@ -5,9 +5,12 @@ $color-principal: #FCCA46;
 $color-secundario: #000000;
 $accordion-button-active-color: $color-principal;
 $accordion-button-active-bg: transparent;
+$color-precios: rgb(63, 184, 63);
 
 // Medidas
 $titulo-principal: 2.5em;
+$titulo-productos: 1em;
+$precio-productos: 1.5em;
 
 * {
 	padding: 0;
@@ -60,16 +63,6 @@ body {
 
 /* Navbar - fin */
 
-/* Enlaces */
-a {
-	color: $color-secundario;
-	text-decoration: none;
-	&:hover {
-		color: $color-secundario;
-		text-shadow: 1px 1px 9px rgb(255, 255, 255);
-	}
-}
-
 /* Header y Menu de navegacion */
 header {
 	background-color: $color-principal;
@@ -81,23 +74,51 @@ header {
 	z-index: 200;
 }
 
-.img-slide {
-	width: 100%;
-	margin: 0% 0% 1% 0%;
+/* Main index - inicio */
+
+.mainIndex {
+	margin: 1em 0;
+	.container {
+		.row {
+			h1 {
+				margin-top: 0.3em;
+				margin-bottom: 1em;
+			}
+			h2 {
+				font-size: 1.3em;
+				margin-top: 1em;
+			}
+			.col {
+				a {
+					text-decoration: none;
+					&:hover {
+						text-shadow: 1px 1px 3px rgb(0, 0, 0);
+						transition: 0.5s;
+					}
+					h5 {
+						margin: 0.5em 0 0.8em 0;
+						display: flex;
+						justify-content: center;
+						color: $color-secundario;
+
+						@media (max-width: 767px) {
+							font-size: 1em;
+						}
+					}
+				}
+			}
+		}
+	}
 }
 
-.img-index {
-	width: 30em;
-	height: 50em;
-	margin: 2em 2em;
+@media (max-width: 767px) {
+	.colMarcas1, .colMarcas2 {
+		width: 50%;
+		padding: 0.5em 1em;
+	}
 }
 
-.container-index {
-	display: flex;
-	align-items: center;
-}
-
-/* Titulos h1 */
+/* Titulos */
 h1 {
 	text-align: center;
 	text-transform: uppercase;
@@ -254,14 +275,14 @@ h1 {
 			transform: translateY(0px);
 		}
 		h3 {
-			font-size: 1em;
+			font-size: $titulo-productos;
 			font-weight: 600;
 			color: #000;
 		}
 		h5 {
-			font-size: 1.5em;
+			font-size: $precio-productos;
 			font-weight: 800;
-			color: green;
+			color: $color-precios;
 		}
 		.carritoBtn {
 			margin-bottom: 5px;
@@ -297,29 +318,71 @@ h1 {
 }
 
 /* footer */
-.email-div {
-	margin: 0 1.3em;
-}
 
-.linkedin-div {
-	margin: 0 1.3em;
-}
-
-.logofooter {
-	width: 7em;
-	padding-top: 1em;
-	padding-bottom: 0.3em;
-	margin: 0 0.5em;
-}
-
-.container-footer {
-	display: flex;
-	justify-content: space-evenly;
-	align-items: center;
-	width: 100%;
-}
-
-footer {
+.footer {
 	background-color: $color-principal;
-	width: 100%;
+	color: $color-secundario;
+	padding: 2em;
+	text-align: center;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	grid-template-areas: 
+	"logo link1 link2"
+	"redes link1 link2";
+	.footerLogo {
+		display: inline-block;
+		margin-bottom: 1em;
+		grid-area: logo;
+		img {
+			width: 7em;
+		}
+	}
+	.footerRedes {
+		margin-bottom: 1em;
+		grid-area: redes;
+
+		@media (max-width: 661px) {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+		}
+		a {
+			display: inline-block;
+			&:not(:last-child) {
+				margin-right: 1em;
+			}
+		}
+		img {
+			width: 35px;
+		}
+	}
+	.footerLinks {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+
+		@media (max-width: 768px) {
+			align-items: center;
+		}
+		a {
+			text-decoration: none;
+			color: $color-secundario;
+			line-height: 2.25;
+			&:hover {
+				text-shadow: 1px 1px 9px rgb(255, 255, 255);
+			}
+		}
+		&.col1 {
+			grid-area: link1;
+			justify-self: center;
+		}
+		&.col2 {
+			grid-area: link2;
+		}
+	}
+	.footerCopyright {
+		margin-top: 9em;
+		grid-area: copyright;
+	}
 }
+
