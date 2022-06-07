@@ -18,63 +18,67 @@ $titulo-principal: 2.5em;
 }
 
 body {
-	padding-top: 100px;
+	padding-top: 85px;
 	width: 100%;
+}
+
+/* Navbar - inicio */
+
+.bg-light {
+	--bs-bg-opacity: 0;
+}
+
+/* menu hamburguesa */
+.navbar-toggler {
+	border: 1.5px solid black;
+	&:focus {
+		text-decoration: none;
+		outline: 0;
+		box-shadow: none;
+	}
+}
+
+/* Boton buscar */
+.btn-outline-dark {
+	border: 0px;
+	--bs-btn-focus-shadow-rgb: none;
+}
+
+/* form de busqueda */
+.form-control {
+	border: 0px solid black;
+	border-radius: 20px;
+}
+
+.nav-link {
+	color: $color-secundario;
+	font-weight: 600;
+	&:hover {
+		text-shadow: 1px 1px 9px rgb(255, 255, 255);
+	}
+}
+
+/* Navbar - fin */
+
+/* Enlaces */
+a {
+	color: $color-secundario;
+	text-decoration: none;
+	&:hover {
+		color: $color-secundario;
+		text-shadow: 1px 1px 9px rgb(255, 255, 255);
+	}
 }
 
 /* Header y Menu de navegacion */
 header {
 	background-color: $color-principal;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
 	position: fixed;
 	top: 0;
 	left: 0;
 	right: 0;
-	height: 100px;
 	width: 100%;
 	z-index: 200;
-	ul {
-		list-style: none;
-		display: flex;
-		justify-content: space-around;
-		flex-wrap: wrap;
-		li {
-			font-family: 'Mochiy Pop P One', sans-serif;
-			font-family: 'Overpass', sans-serif;
-			font-weight: 600;
-			margin: 0 3.1em;
-			&:hover {
-				-ms-transform: rotateZ(-7deg);
-				transform: rotateZ(-7deg);
-				transition: 0.3s ease-in;
-			}
-		}
-	}
-}
-
-/* Logo del header */
-.logoheader {
-	width: 4.5em;
-	display: flex;
-	margin-left: 1.3em;
-}
-
-a {
-	color: $color-secundario;
-	text-decoration: none;
-	font-size: 1em;
-	&:hover {
-		color: rgb(144, 62, 199);
-	}
-}
-
-/* Imagen del carrito */
-.carritoimg {
-	width: 50px;
-	height: 50px;
-	margin-right: 40px;
 }
 
 .img-slide {
@@ -208,23 +212,22 @@ h1 {
 		height: 24em;
 		box-shadow: 0 5px 15px black;
 	}
-}
-
-.imgBx {
-	position: absolute;
-	width: 90%;
-	left: 50%;
-	transform: translateX(-50%);
-	height: 14em;
-	border-radius: 20px;
-	overflow: hidden;
-	img {
+	.imgBx {
 		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		object-fit: contain;
+		width: 90%;
+		left: 50%;
+		transform: translateX(-50%);
+		height: 14em;
+		border-radius: 20px;
+		overflow: hidden;
+		img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+		}
 	}
 }
 
@@ -240,27 +243,33 @@ h1 {
 		height: 100%;
 		display: flex;
 		justify-content: center;
-		align-items: flex-end;
 		overflow: hidden;
 	.detalles {
 		text-align: center;
 		width: 100%;
+		margin-top: 236px;
+		height: 40px;
 		transition: 0.5s;
-		transform: translateY(2.5em);
 		&:hover {
 			transform: translateY(0px);
 		}
 		h3 {
-			font-size: 1.25em;
+			font-size: 1em;
 			font-weight: 600;
 			color: #000;
 		}
-		p {
-			font-size: 0.90em;
-			font-weight: 300;
+		h5 {
+			font-size: 1.5em;
+			font-weight: 800;
+			color: green;
 		}
 		.carritoBtn {
 			margin-bottom: 5px;
+			margin-top: -0.6em;
+			p {
+				margin-top: 1em;
+				margin-bottom: 0.26em;
+			}
 			button {
 				padding: 3px 15px;
 				border: none;
@@ -274,68 +283,6 @@ h1 {
 	}
 }
 
-}
-
-#allsection {
-	width: 100%;
-	margin: auto;
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
-	gap: 1.5em;
-	max-width: 1200px;
-	min-height: 100vh;
-}
-
-.bolsa-dogchow {
-	width: 50%;
-}
-
-.btn {
-	display: flex;
-	justify-content: center;
-	width: 1.5em;
-}
-
-.btn-carrito {
-	display: flex;
-	justify-content: center;
-	width: 9em;
-	border: 1px solid #000000;
-}
-
-.container-btn_carrito {
-	position: relative;
-	left: 1.6em;
-	top: -0.7em;
-}
-
-.btn-juntos {
-	display: flex;
-	position: relative;
-	right: 4.2em;
-	top: 5.3em;
-}
-
-.producto-precio {
-	display: flex;
-	font-size: 1.5em;
-}
-
-.cajas {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	align-items: center;
-	border: 1px solid #000000;
-	width: 13em;
-	height: 25em;
-	margin: 1.5em 0.5em;
-}
-
-.parrafo-cajas {
-	font-size: 1em;
-	text-align: center;
 }
 
 /* Formulario de contacto - contactanos.html */
