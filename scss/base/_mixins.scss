@@ -1,0 +1,6 @@
+
+
+@mixin flexible($disp, $justcont) {
+    display: $disp;
+    justify-content: $justcont;
+}
