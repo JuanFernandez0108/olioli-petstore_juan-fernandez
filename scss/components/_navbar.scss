@@ -1,0 +1,35 @@
+@import '../base/variables';
+
+.bg-light {
+	--bs-bg-opacity: 0;
+}
+
+/* menu hamburguesa */
+.navbar-toggler {
+	border: 1.5px solid black;
+	&:focus {
+		text-decoration: none;
+		outline: 0;
+		box-shadow: none;
+	}
+}
+
+/* Boton buscar */
+.btn-outline-dark {
+	border: 0px;
+	--bs-btn-focus-shadow-rgb: none;
+}
+
+/* form de busqueda */
+.form-control {
+	border: 0px solid black;
+	border-radius: 20px;
+}
+
+.nav-link {
+	color: $color-secundario;
+	font-weight: 600;
+	&:hover {
+		text-shadow: 1px 1px 9px rgb(255, 255, 255);
+	}
+}
