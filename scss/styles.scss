@@ -1,11 +1,11 @@
 @import 'components/navbar';
 @import 'components/footer';
+@import 'base/extends';
 
 * {
 	padding: 0;
 	margin: 0;
-	font-family: 'Mochiy Pop P One', sans-serif;
-	font-family: 'Overpass', sans-serif;
+	@extend %fuentes;
 	box-sizing: border-box;
 }
 
@@ -47,8 +47,8 @@ header {
 					text-decoration: none;
 
 					&:hover {
-						text-shadow: 1px 1px 3px rgb(0, 0, 0);
-						transition: 0.5s;
+						text-shadow: 1px 1px 3px darkgray;
+						transition: 0.5s ease-in-out;
 					}
 
 					h5 {
@@ -81,17 +81,11 @@ h1 {
 	text-align: center;
 	text-transform: uppercase;
 	font-size: $titulo-principal;
-	font-family: 'Mochiy Pop P One', sans-serif;
-	font-family: 'Overpass', sans-serif;
+	@extend %fuentes;
 	font-weight: 600;
 }
 
 .titulo-index {
-	text-transform: uppercase;
-	font-size: $titulo-principal;
-	font-family: 'Mochiy Pop P One', sans-serif;
-	font-family: 'Overpass', sans-serif;
-	font-weight: 600;
 	margin-top: 1em;
 }
 
@@ -130,8 +124,7 @@ h1 {
 
 /* Parrafos */
 .parrafos {
-	font-family: 'Mochiy Pop P One', sans-serif;
-	font-family: 'Overpass', sans-serif;
+	@extend %fuentes;
 	font-weight: 300;
 	font-style: italic;
 	font-size: 1.3em;
@@ -147,14 +140,6 @@ h1 {
 	padding: 0 0;
 	text-align: justify;
 }
-
-/* Contenedor de marcas - marcas.html */
-/*.container-marcas {
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
-	margin: 0 2em;
-}*/
 
 /* Marcas - marcas.html */
 .card {
@@ -186,13 +171,13 @@ h1 {
 	width: 18em;
 	height: 19em;
 	background: #fff;
-	border-radius: 20px;
+	border-radius: 5px;
 	margin: 3em 1em 3em 1em;
-	transition: 0.5s;
+	transition: 0.5s ease-in-out;
 
 	&:hover {
 		height: 24em;
-		box-shadow: 0 5px 15px black;
+		box-shadow: 0 5px 15px darkgray;
 	}
 
 	.imgBx {
