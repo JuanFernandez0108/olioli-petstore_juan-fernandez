@@ -178,7 +178,58 @@ h1 {
   padding: 0 0;
   text-align: justify; }
 
-/* Marcas - marcas.html */
+/* MARCAS - marcas.html */
+.marcas-container {
+  flex-wrap: wrap;
+  margin: 0 auto; }
+  .marcas-container .cardMarca {
+    position: relative;
+    width: 20.5em;
+    height: 19em;
+    border-bottom: 1px solid lightgrey;
+    margin: 3em 1em 3em 1em; }
+    .marcas-container .cardMarca .marca-imgContainer {
+      position: absolute;
+      width: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 10em; }
+      .marcas-container .cardMarca .marca-imgContainer img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%; }
+    .marcas-container .cardMarca .marca-contenido {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center; }
+      .marcas-container .cardMarca .marca-contenido .marca-detalles {
+        text-align: center;
+        width: 100%;
+        margin-top: 170px;
+        height: 40px; }
+        .marcas-container .cardMarca .marca-contenido .marca-detalles p {
+          margin-bottom: 0; }
+        .marcas-container .cardMarca .marca-contenido .marca-detalles .marca-button {
+          margin-bottom: 5px;
+          margin-top: -0.6em; }
+          .marcas-container .cardMarca .marca-contenido .marca-detalles .marca-button button {
+            background-color: #fff;
+            padding: 3px 15px;
+            border: none;
+            box-shadow: 0 0 3px black;
+            border-radius: 5px;
+            margin-top: 2em; }
+            .marcas-container .cardMarca .marca-contenido .marca-detalles .marca-button button:hover {
+              background-color: #FCCA46; }
+            .marcas-container .cardMarca .marca-contenido .marca-detalles .marca-button button a {
+              text-decoration: none;
+              color: #000000;
+              font-weight: 600; }
+
 /* nosotros.html */
 .img-nosotros {
   width: 100%;
