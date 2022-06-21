@@ -315,10 +315,46 @@ h1 {
         font-size: 0.90em; }
 
 /* Formulario de contacto - contactanos.html */
-.container-form {
-  display: flex;
-  justify-content: center; }
+.form-contacto {
+  width: 450px;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+  margin-top: 20px;
+  border-radius: 7px; }
+  @media (max-width: 480px) {
+    .form-contacto {
+      width: 90%; } }
+  .form-contacto h2 {
+    text-align: center;
+    margin: 0;
+    font-size: 1.8em;
+    font-weight: 600;
+    margin-bottom: 15px; }
+  .form-contacto input {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 7px; }
+  .form-contacto textarea {
+    width: 100%;
+    max-width: 100%;
+    max-height: 200px;
+    min-height: 200px;
+    margin-bottom: 20px;
+    padding: 7px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 7px; }
+  .form-contacto .buttonsForm {
+    background: #fff;
+    padding: 10px;
+    transition: 0.5s ease-in-out; }
+    .form-contacto .buttonsForm:hover {
+      cursor: pointer;
+      background: #FCCA46; }
 
-.form-contactanos {
-  margin-bottom: 1.5em;
-  margin-top: 3em; }
+.disclaimer {
+  display: none !important; }

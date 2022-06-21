@@ -318,11 +318,55 @@ h1 {
 }
 
 /* Formulario de contacto - contactanos.html */
-.container-form {
-	@include flexible(flex, center);
+
+.form-contacto {
+	width: 450px;
+	margin: auto;
+	background: rgba(0, 0, 0, 0.1);
+	padding: 10px 20px;
+	margin-top: 20px;
+	border-radius: 7px;
+
+	@media (max-width:480px) {
+		width: 90%;
+	}
+	h2 {
+		text-align: center;
+		margin: 0;
+		font-size: 1.8em;
+		font-weight: 600;
+		margin-bottom: 15px;
+	}
+	input {
+		width: 100%;
+		margin-bottom: 20px;
+		padding: 7px;
+		font-size: 1.1em;
+		border: none;
+		border-radius: 7px;
+	}
+	textarea {
+		width: 100%;
+		max-width: 100%;
+		max-height: 200px;
+		min-height: 200px;
+		margin-bottom: 20px;
+		padding: 7px;
+		font-size: 1.1em;
+		border: none;
+		border-radius: 7px;
+	}
+	.buttonsForm {
+		background: #fff;
+		padding: 10px;
+		transition: 0.5s ease-in-out;
+		&:hover {
+			cursor: pointer;
+			background: $color-principal;
+		}
+	}
 }
 
-.form-contactanos {
-	margin-bottom: 1.5em;
-	margin-top: 3em;
+.disclaimer {
+	display: none !important;
 }
