@@ -1,0 +1,46 @@
+@import '../base/variables';
+@import '../base/extends';
+
+// Titulos
+h1 {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: $titulo-principal;
+	@extend %fuentes;
+	font-weight: 600;
+}
+
+.titulo-index {
+	margin-top: 1em;
+}
+
+.titulo-marcas {
+	margin-top: 1em;
+}
+
+.titulo-contactanos {
+	margin-top: 0.5em;
+}
+
+.titulo-nosotros {
+	margin-top: 1em;
+}
+
+// Parrafos
+.parrafos {
+	@extend %fuentes;
+	font-weight: 300;
+	font-style: italic;
+	font-size: 1.3em;
+	letter-spacing: 0.1em;
+	word-spacing: 0.3em;
+	line-height: 1.8em;
+	text-align: center;
+	padding: 0.5em 1em;
+}
+
+.parrafo-index {
+	margin: 0 7em;
+	padding: 0 0;
+	text-align: justify;
+}

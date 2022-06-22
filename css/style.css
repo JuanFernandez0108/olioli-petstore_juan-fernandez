@@ -76,20 +76,6 @@
     margin-top: 9em;
     grid-area: copyright; }
 
-*, h1, .parrafos {
-  font-family: 'Mochiy Pop P One', sans-serif;
-  font-family: 'Overpass', sans-serif; }
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box; }
-
-body {
-  padding-top: 85px;
-  width: 100%; }
-
-/* Header y Menu de navegacion */
 header {
   background-color: #FCCA46;
   position: fixed;
@@ -99,7 +85,51 @@ header {
   width: 100%;
   z-index: 200; }
 
-/* Main index - inicio */
+h1, .parrafos, * {
+  font-family: 'Mochiy Pop P One', sans-serif;
+  font-family: 'Overpass', sans-serif; }
+
+.form-contacto input, .form-contacto textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 7px;
+  font-size: 1.1em;
+  border: none;
+  border-radius: 7px; }
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2.5em;
+  font-weight: 600; }
+
+.titulo-index {
+  margin-top: 1em; }
+
+.titulo-marcas {
+  margin-top: 1em; }
+
+.titulo-contactanos {
+  margin-top: 0.5em; }
+
+.titulo-nosotros {
+  margin-top: 1em; }
+
+.parrafos {
+  font-weight: 300;
+  font-style: italic;
+  font-size: 1.3em;
+  letter-spacing: 0.1em;
+  word-spacing: 0.3em;
+  line-height: 1.8em;
+  text-align: center;
+  padding: 0.5em 1em; }
+
+.parrafo-index {
+  margin: 0 7em;
+  padding: 0 0;
+  text-align: justify; }
+
 .mainIndex {
   margin: 1em 0; }
   .mainIndex .container .row h1 {
@@ -128,42 +158,6 @@ header {
     width: 50%;
     padding: 0.5em 1em; } }
 
-/* Titulos */
-h1 {
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 2.5em;
-  font-weight: 600; }
-
-.titulo-index {
-  margin-top: 1em; }
-
-.titulo-marcas {
-  margin-top: 1em; }
-
-.titulo-contactanos {
-  margin-top: 0.5em; }
-
-.titulo-nosotros {
-  margin-top: 1em; }
-
-/* Parrafos */
-.parrafos {
-  font-weight: 300;
-  font-style: italic;
-  font-size: 1.3em;
-  letter-spacing: 0.1em;
-  word-spacing: 0.3em;
-  line-height: 1.8em;
-  text-align: center;
-  padding: 0.5em 1em; }
-
-.parrafo-index {
-  margin: 0 7em;
-  padding: 0 0;
-  text-align: justify; }
-
-/* MARCAS - marcas.html */
 .marcas-container {
   flex-wrap: wrap;
   margin: 0 auto; }
@@ -215,90 +209,96 @@ h1 {
               color: #000000;
               font-weight: 600; }
 
-/* nosotros.html */
 .nosotros-container {
   display: flex;
   align-items: center;
   margin: 5em 0; }
 
-/* FAQ en nosotros.html */
 .accordion-button {
   background-color: #FCCA46; }
 
 .accordion-header {
   margin-bottom: 0.2em; }
 
-/* productos - productos.html */
-.card {
-  position: relative;
-  width: 18em;
-  height: 19em;
-  background: #fff;
-  border-radius: 5px;
-  margin: 3em 1em 3em 1em;
-  transition: 0.5s ease-in-out; }
-  .card:hover {
-    height: 24em;
-    box-shadow: 0 5px 15px darkgray; }
-  .card .imgBx {
-    position: absolute;
-    width: 90%;
-    left: 50%;
-    transform: translateX(-50%);
-    height: 14em;
-    border-radius: 20px;
-    overflow: hidden; }
-    .card .imgBx img {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: contain; }
-
 .containerProd {
   flex-wrap: wrap;
   margin: 0 auto; }
+  .containerProd .card {
+    position: relative;
+    width: 18em;
+    height: 19em;
+    background: #fff;
+    border-radius: 5px;
+    margin: 3em 1em 3em 1em;
+    transition: 0.5s ease-in-out; }
+    .containerProd .card:hover {
+      height: 24em;
+      box-shadow: 0 5px 15px darkgray; }
+    .containerProd .card .imgBx {
+      position: absolute;
+      width: 90%;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 14em;
+      border-radius: 20px;
+      overflow: hidden; }
+      .containerProd .card .imgBx img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: contain; }
+    .containerProd .card .content {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      overflow: hidden; }
+      .containerProd .card .content .detalles {
+        text-align: center;
+        width: 100%;
+        margin-top: 236px;
+        height: 40px;
+        transition: 0.5s; }
+        .containerProd .card .content .detalles:hover {
+          transform: translateY(0px); }
+        .containerProd .card .content .detalles h3 {
+          font-size: 1em;
+          font-weight: 600;
+          color: #000; }
+        .containerProd .card .content .detalles h5 {
+          font-size: 1.5em;
+          font-weight: 800;
+          color: #3fb83f; }
+        .containerProd .card .content .detalles .carritoBtn {
+          margin-bottom: 5px;
+          margin-top: -0.6em; }
+          .containerProd .card .content .detalles .carritoBtn p {
+            margin-top: 1em;
+            margin-bottom: 0.26em; }
+          .containerProd .card .content .detalles .carritoBtn button {
+            padding: 3px 15px;
+            border: none;
+            border-radius: 5px;
+            outline: none;
+            background-color: #FCCA46;
+            font-weight: 400;
+            font-size: 0.90em; }
 
-.card .content {
-  position: absolute;
+h1, .parrafos, * {
+  font-family: 'Mochiy Pop P One', sans-serif;
+  font-family: 'Overpass', sans-serif; }
+
+.form-contacto input, .form-contacto textarea {
   width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  overflow: hidden; }
-  .card .content .detalles {
-    text-align: center;
-    width: 100%;
-    margin-top: 236px;
-    height: 40px;
-    transition: 0.5s; }
-    .card .content .detalles:hover {
-      transform: translateY(0px); }
-    .card .content .detalles h3 {
-      font-size: 1em;
-      font-weight: 600;
-      color: #000; }
-    .card .content .detalles h5 {
-      font-size: 1.5em;
-      font-weight: 800;
-      color: #3fb83f; }
-    .card .content .detalles .carritoBtn {
-      margin-bottom: 5px;
-      margin-top: -0.6em; }
-      .card .content .detalles .carritoBtn p {
-        margin-top: 1em;
-        margin-bottom: 0.26em; }
-      .card .content .detalles .carritoBtn button {
-        padding: 3px 15px;
-        border: none;
-        border-radius: 5px;
-        outline: none;
-        background-color: #FCCA46;
-        font-weight: 400;
-        font-size: 0.90em; }
+  margin-bottom: 20px;
+  padding: 7px;
+  font-size: 1.1em;
+  border: none;
+  border-radius: 7px; }
 
-/* Formulario de contacto - contactanos.html */
 .form-contacto {
   width: 450px;
   margin: auto;
@@ -315,23 +315,10 @@ h1 {
     font-size: 1.8em;
     font-weight: 600;
     margin-bottom: 15px; }
-  .form-contacto input {
-    width: 100%;
-    margin-bottom: 20px;
-    padding: 7px;
-    font-size: 1.1em;
-    border: none;
-    border-radius: 7px; }
   .form-contacto textarea {
-    width: 100%;
     max-width: 100%;
     max-height: 200px;
-    min-height: 200px;
-    margin-bottom: 20px;
-    padding: 7px;
-    font-size: 1.1em;
-    border: none;
-    border-radius: 7px; }
+    min-height: 200px; }
   .form-contacto .buttonsForm {
     background: #fff;
     padding: 10px;
@@ -339,6 +326,27 @@ h1 {
     .form-contacto .buttonsForm:hover {
       cursor: pointer;
       background: #FCCA46; }
+
+h1, .parrafos, * {
+  font-family: 'Mochiy Pop P One', sans-serif;
+  font-family: 'Overpass', sans-serif; }
+
+.form-contacto input, .form-contacto textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 7px;
+  font-size: 1.1em;
+  border: none;
+  border-radius: 7px; }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+body {
+  padding-top: 85px;
+  width: 100%; }
 
 .disclaimer {
   display: none !important; }

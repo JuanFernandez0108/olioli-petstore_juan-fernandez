@@ -1,0 +1,96 @@
+@import '../base/variables';
+@import '../base/mixins';
+
+// productos - productos.html
+
+.containerProd {
+    flex-wrap: wrap;
+    margin: 0 auto;
+
+    .card {
+        position: relative;
+        width: 18em;
+        height: 19em;
+        background: #fff;
+        border-radius: 5px;
+        margin: 3em 1em 3em 1em;
+        transition: 0.5s ease-in-out;
+
+        &:hover {
+            height: 24em;
+            box-shadow: 0 5px 15px darkgray;
+        }
+
+        .imgBx {
+            position: absolute;
+            width: 90%;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 14em;
+            border-radius: 20px;
+            overflow: hidden;
+
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+
+        .content {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            @include flexible(flex, center);
+            overflow: hidden;
+
+            .detalles {
+                text-align: center;
+                width: 100%;
+                margin-top: 236px;
+                height: 40px;
+                transition: 0.5s;
+
+                &:hover {
+                    transform: translateY(0px);
+                }
+
+                h3 {
+                    font-size: $titulo-productos;
+                    font-weight: 600;
+                    color: #000;
+                }
+
+                h5 {
+                    font-size: $precio-productos;
+                    font-weight: 800;
+                    color: $color-precios;
+                }
+
+                .carritoBtn {
+                    margin-bottom: 5px;
+                    margin-top: -0.6em;
+
+                    p {
+                        margin-top: 1em;
+                        margin-bottom: 0.26em;
+                    }
+
+                    button {
+                        padding: 3px 15px;
+                        border: none;
+                        border-radius: 5px;
+                        outline: none;
+                        background-color: $color-principal;
+                        font-weight: 400;
+                        font-size: 0.90em;
+                    }
+                }
+            }
+        }
+
+    }
+}

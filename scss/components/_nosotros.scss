@@ -1,0 +1,19 @@
+@import '../base/variables';
+
+// nosotros.html
+
+.nosotros-container {
+	display: flex;
+	align-items: center;
+	margin: 5em 0;
+}
+
+
+// FAQ en nosotros.html
+.accordion-button {
+	background-color: $color-principal;
+}
+
+.accordion-header {
+	margin-bottom: 0.2em;
+}
