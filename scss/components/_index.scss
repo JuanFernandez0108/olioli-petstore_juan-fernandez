@@ -50,3 +50,40 @@
 		padding: 0.5em 1em;
 	}
 }
+
+.metodo-compra_container {
+	@include flexible(flex, space-around);
+	margin: 2em 1em;
+	padding: 0.5em;
+
+	@media (max-width: 920px) {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
+	.paso-uno, .paso-dos, .paso-tres {
+		flex-wrap: wrap;
+		text-align: center;
+		@include flexible(flex, center);
+
+		@media (max-width: 920px) {
+			margin: 1em 12em;
+			display: flex;
+			align-items: center;
+		}
+
+		@media (max-width: 744px) {
+			margin: 1em 5em;
+			display: flex;
+			align-items: center;
+			font-size: 0.5em;
+		}
+
+		img {
+			width: 200px;
+		}
+		h5 {
+			margin: 0.5em 0;
+		}
+	}
+}

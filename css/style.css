@@ -158,6 +158,37 @@ h1 {
     width: 50%;
     padding: 0.5em 1em; } }
 
+.metodo-compra_container {
+  display: flex;
+  justify-content: space-around;
+  margin: 2em 1em;
+  padding: 0.5em; }
+  @media (max-width: 920px) {
+    .metodo-compra_container {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap; } }
+  .metodo-compra_container .paso-uno, .metodo-compra_container .paso-dos, .metodo-compra_container .paso-tres {
+    flex-wrap: wrap;
+    text-align: center;
+    display: flex;
+    justify-content: center; }
+    @media (max-width: 920px) {
+      .metodo-compra_container .paso-uno, .metodo-compra_container .paso-dos, .metodo-compra_container .paso-tres {
+        margin: 1em 12em;
+        display: flex;
+        align-items: center; } }
+    @media (max-width: 744px) {
+      .metodo-compra_container .paso-uno, .metodo-compra_container .paso-dos, .metodo-compra_container .paso-tres {
+        margin: 1em 5em;
+        display: flex;
+        align-items: center;
+        font-size: 0.5em; } }
+    .metodo-compra_container .paso-uno img, .metodo-compra_container .paso-dos img, .metodo-compra_container .paso-tres img {
+      width: 200px; }
+    .metodo-compra_container .paso-uno h5, .metodo-compra_container .paso-dos h5, .metodo-compra_container .paso-tres h5 {
+      margin: 0.5em 0; }
+
 .marcas-container {
   flex-wrap: wrap;
   margin: 0 auto; }
